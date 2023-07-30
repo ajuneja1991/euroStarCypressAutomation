@@ -110,6 +110,6 @@ Then("Get Screenshot of page",()=>{
     cy.get('[data-testid="stubContainer"]').then(($element) => {
         // Scroll the element into view before taking the screenshot
         $element[0].scrollIntoView();
-        cy.screenshot('up-to-specific-element', { capture: 'runner' });
+        cy.screenshot('checkoutPageScreenshot', { capture: 'runner' });
     });
 })
